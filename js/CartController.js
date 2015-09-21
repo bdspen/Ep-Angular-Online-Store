@@ -1,10 +1,12 @@
 onlineStore.controller('CartCtrl', function($scope){
 
     $scope.cost = 0;
-    $scope.items_in_cart= [];
+    $scope.itemsInCart= [];
 
     $scope.addToCart = function(){
-        //stub
+        $scope.itemsInCart.push({name: $scope.itemName });
+        console.log("added to cart!");
+        $scope.itemName = null;
     }
 
     $scope.calculateOrderPrice = function(){
