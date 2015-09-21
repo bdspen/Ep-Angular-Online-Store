@@ -5,9 +5,58 @@
   <script src="lib/angular.js"></script>
   <script src="app.js"></script>
   <script src="js/OnlineStoreController.js"></script>
+  <script src="js/CartController.js"></script>
   <link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
 <body>
+<!-- search form container for items for sale  ##############################################-->
+    <div class"container" ng-controller="StoreCtrl">
+        <div class"row" ng-show="items.length">
+            <div "class col-md-12">
+                <h4>Search Items for sale</h4>
+                    <form class="form-inline" role="form">
+                        <div class="form-group">
+                            <input ng-model="query" type="text" class="form-control" id="item-name" placeholder="Search">
+                        </div>
+                    </form>
+            </div>
+        </div>
+<!-- shows list of items for sale ###################################################-->
+        <div class"row">
+            <h2 ng-show="items.length && filtered.length">Items for Sale</h2>
+            <h2 ng-show="items.length && !filtered.length">No items found...</h2>
+            <ul>
+                <li ng-repeat="item in filtered = (items | filter:query)">
+                    <span ng-click="editing = true" ng-hide="editing">
+                        {{item.name}} <a ng-click="deleteItem(item)">Delete</a>
+                    </span>
+                    <span class="form-group" ng-show="editing" ng-submit="editing = false">
+                        <form class="form-inline" role="form">
+                            <input type="text" class="form-control input-sm" ng-model="item.name" placeholder="name">
+                            <button class="btn btn-defualt btn-sm" type="submit">Save</button>
+
+                        </form>
+                    </span>
+                </li>
+            </ul>
+        </div>
+        <div class="col-md-4">
+            <h2>New Item For Sale</h2>
+            <form ng-submit="addItemToStore()"class= "inline-form" role="form">
+                <div class = "form-group">
+                    <input type="text" ng-model="itemName" class="form-control" placeholder="Enter the name of the Item">
+                </div>
+                    <button type="submit" class="btn btn-default">Submit</button>
+                </form>
+        </div>
+
+
+    </div>
+
+    <!-- cart controller elements #############################-->
+
+    <div class"container" ng-controller="CartCtrl">
+    </div>
 
 </body>
 </html>

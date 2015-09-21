@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<ScappleDocument Version="1.1" ID="5EF5919A-DE35-46BA-AD1F-E2B7652275BB">
+    <Notes>
+        <Note ID="0" FontSize="12.0" Position="873.013458,274.065135" Width="97.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+            </Appearance>
+            <String>items_for_sale []</String>
+            <ConnectedNoteIDs>7, 14</ConnectedNoteIDs>
+        </Note>
+        <Note ID="1" FontSize="20.9275" Position="516.537011,463.483398" Width="53.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+            </Appearance>
+            <String>User</String>
+        </Note>
+        <Note ID="2" FontSize="22.32" Position="859.454864,234.791698" Width="159.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+            </Appearance>
+            <String>StoreController</String>
+        </Note>
+        <Note ID="6" FontSize="12.0" Position="545.824699,508.422898" Width="79.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+            </Appearance>
+            <String>chooseItem()</String>
+        </Note>
+        <Note ID="7" FontSize="26.0725" Position="1228.432136,439.860532" Width="59.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+            </Appearance>
+            <String>Item</String>
+            <ConnectedNoteIDs>0, 14</ConnectedNoteIDs>
+        </Note>
+        <Note ID="8" FontSize="23.375" Position="574.070312,199.832031" Width="127.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+            </Appearance>
+            <String>Search box
+</String>
+        </Note>
+        <Note ID="9" FontSize="12.0" Position="1222.103292,479.757743" Width="268.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+            </Appearance>
+            <String>{name: ‘baseball’, price: 10, img: ‘urlToImage’}</String>
+        </Note>
+        <Note ID="11" FontSize="19.425" Position="177.707499,199.059947" Width="255.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+            </Appearance>
+            <String>Form to make item and add to items_for_sale</String>
+        </Note>
+        <Note ID="12" FontSize="12.0" Position="245.473085,273.260754" Width="113.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+            </Appearance>
+            <String>Form to create user</String>
+        </Note>
+        <Note ID="13" FontSize="32.1025" Position="951.605579,549.986377" Width="69.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+            </Appearance>
+            <String>Cart</String>
+        </Note>
+        <Note ID="14" FontSize="12.0" Position="999.669048,654.587107" Width="98.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+            </Appearance>
+            <String>{items_in_cart []}</String>
+            <ConnectedNoteIDs>0, 7, 17, 21</ConnectedNoteIDs>
+        </Note>
+        <Note ID="16" FontSize="12.0" Position="951.176206,664.756924" Width="64.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+            </Appearance>
+            <String>addToCart</String>
+        </Note>
+        <Note ID="17" FontSize="12.0" Position="971.774065,629.952231" Width="61.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+            </Appearance>
+            <String>orderCost</String>
+            <ConnectedNoteIDs>14</ConnectedNoteIDs>
+        </Note>
+        <Note ID="18" FontSize="12.0" Position="1002.194464,716.294594" Width="111.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+            </Appearance>
+            <String>calculateShipping()</String>
+        </Note>
+        <Note ID="20" FontSize="12.0" Position="954.545397,691.527009" Width="96.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+            </Appearance>
+            <String>calcOrderPrice()</String>
+        </Note>
+        <Note ID="21" FontSize="13.335" Position="660.630799,789.869091" Width="146.0" Level="1">
+            <Appearance>
+                <Alignment>Left</Alignment>
+            </Appearance>
+            <String>[
+[ItemObject, 20],
+[ItemObject2, 30]
+]</String>
+            <ConnectedNoteIDs>14, 22</ConnectedNoteIDs>
+        </Note>
+        <Note ID="22" FontSize="15.8625" Position="579.188478,899.587242" Width="237.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+            </Appearance>
+            <String>{item: instance of an ItemObject,
+discount: 20}</String>
+            <ConnectedNoteIDs>21, 23</ConnectedNoteIDs>
+        </Note>
+        <Note ID="23" FontSize="12.0" Position="681.40591,979.557871" Width="196.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+            </Appearance>
+            <String>itemInCart[1].item = baseballObject
+itemInCart[1].discount = 20</String>
+            <ConnectedNoteIDs>22</ConnectedNoteIDs>
+        </Note>
+        <Note ID="24" FontSize="12.0" Position="544.276506,491.463366" Width="39.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+            </Appearance>
+            <String>name</String>
+        </Note>
+        <Note ID="26" FontSize="26.3525" Position="87.0,686.663808" Width="45.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+            </Appearance>
+            <String>UX</String>
+        </Note>
+        <Note ID="27" FontSize="12.0" Position="115.499507,734.393366" Width="99.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+            </Appearance>
+            <String>form item clicked</String>
+            <ConnectedNoteIDs>28</ConnectedNoteIDs>
+        </Note>
+        <Note ID="28" FontSize="12.0" Position="270.151318,748.347244" Width="93.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+            </Appearance>
+            <String>does some stuff</String>
+            <ConnectedNoteIDs>27</ConnectedNoteIDs>
+        </Note>
+        <Note ID="29" FontSize="12.0" Position="243.978525,908.072254" Width="169.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+            </Appearance>
+            <String>display a list of items_for_sale</String>
+        </Note>
+        <Note ID="30" FontSize="12.0" Position="246.254836,990.087458" Width="162.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+            </Appearance>
+            <String>display a list of items_in_cart</String>
+        </Note>
+        <Note ID="33" FontSize="12.0" Position="166.285506,872.169985" Width="60.0">
+            <Appearance>
+                <Border Weight="1"></Border>
+            </Appearance>
+            <String>ng-repeat</String>
+        </Note>
+    </Notes>
+    <BackgroundShapes>
+        <Shape ID="4" Sticky="Yes" Position="840.724396,222.877635" Width="236.0" Height="210.636719">
+            <Appearance>
+                <Border Weight="1"></Border>
+            </Appearance>
+        </Shape>
+        <Shape ID="25" Sticky="Yes" Position="505.87741,447.091793" Width="130.0" Height="101.0">
+            <Appearance>
+                <Border Weight="1"></Border>
+            </Appearance>
+        </Shape>
+        <Shape ID="10" Sticky="Yes" Position="1211.205573,424.294125" Width="290.0" Height="95.0">
+            <Appearance>
+                <Border Weight="1"></Border>
+            </Appearance>
+        </Shape>
+        <Shape ID="15" Sticky="Yes" Position="940.0,534.63366" Width="179.0" Height="285.36634">
+            <Appearance>
+                <Border Weight="1"></Border>
+            </Appearance>
+        </Shape>
+        <Shape ID="19" Sticky="Yes" Position="165.033964,185.426358" Width="300.0" Height="200.0">
+            <Appearance>
+                <Border Weight="1"></Border>
+            </Appearance>
+        </Shape>
+        <Shape ID="31" Sticky="Yes" Position="76.0,670.663808" Width="415.270736" Height="430.552561">
+            <Appearance>
+                <Border Weight="1"></Border>
+            </Appearance>
+        </Shape>
+        <Shape ID="34" Sticky="Yes" Position="154.899804,855.930487" Width="269.0" Height="92.0">
+            <Appearance>
+                <Border Weight="1"></Border>
+            </Appearance>
+        </Shape>
+    </BackgroundShapes>
+    <AutoFit>0-2, 6-8, 12-14, 16-18, 20-30, 33-34</AutoFit>
+    <NoteStyles>
+        <Style Name="Title Text" ID="72450F44-3F15-4726-B8AD-FD69EAA8F48A" AffectFontStyle="Yes" AffectAlignment="Yes" AffectTextColor="No" AffectNoteBody="No" AffectFade="No">
+            <FontSize>28.0</FontSize>
+            <IsBold>Yes</IsBold>
+        </Style>
+        <Style Name="Red Text" ID="8B5BD07A-7585-4A19-B272-B7F079CFC0E1" AffectFontStyle="No" AffectAlignment="No" AffectTextColor="Yes" AffectNoteBody="No" AffectFade="No">
+            <TextColor>1.0 0.0 0.0</TextColor>
+        </Style>
+        <Style Name="Brown Bubble" ID="E157551A-4FAE-4AB2-AD4B-36275F00F39C" AffectFontStyle="No" AffectAlignment="No" AffectTextColor="No" AffectNoteBody="Yes" AffectFade="No">
+            <BorderThickness>1</BorderThickness>
+            <BorderColor>0.290055 0.1523 0.182215</BorderColor>
+            <FillColor>0.940019 0.892907 0.779716</FillColor>
+        </Style>
+        <Style Name="Yellow Bubble" ID="B07D07DA-BCAD-43B7-8BFA-55C2D71C3024" AffectFontStyle="No" AffectAlignment="No" AffectTextColor="No" AffectNoteBody="Yes" AffectFade="No">
+            <BorderThickness>1</BorderThickness>
+            <BorderColor>0.756763 0.785592 0.373258</BorderColor>
+            <FillColor>0.906773 0.910625 0.634363</FillColor>
+        </Style>
+        <Style Name="Green Bubble" ID="E49A2FA1-5F83-4733-9E9C-B9825E1EFE37" AffectFontStyle="No" AffectAlignment="No" AffectTextColor="No" AffectNoteBody="Yes" AffectFade="No">
+            <BorderThickness>1</BorderThickness>
+            <BorderColor>0.331867 0.609932 0.356197</BorderColor>
+            <FillColor>0.790123 0.882327 0.80198</FillColor>
+        </Style>
+        <Style Name="Blue Bubble" ID="28B2E78C-2737-4C2D-8D0B-BF9FD31EE761" AffectFontStyle="No" AffectAlignment="No" AffectTextColor="No" AffectNoteBody="Yes" AffectFade="No">
+            <BorderThickness>1</BorderThickness>
+            <BorderColor>0.477193 0.557066 0.76433</BorderColor>
+            <FillColor>0.840969 0.866828 0.925903</FillColor>
+        </Style>
+        <Style Name="Pink Bubble" ID="2D501CFE-623E-46B5-BA33-EDE138B1DD01" AffectFontStyle="No" AffectAlignment="No" AffectTextColor="No" AffectNoteBody="Yes" AffectFade="No">
+            <BorderThickness>1</BorderThickness>
+            <BorderColor>0.747881 0.366532 0.542813</BorderColor>
+            <FillColor>0.918452 0.807302 0.863467</FillColor>
+        </Style>
+    </NoteStyles>
+    <UISettings>
+        <BackgroundColor>0.999737 0.986332 0.931298</BackgroundColor>
+        <DefaultFont>Helvetica</DefaultFont>
+        <DefaultTextColor>0.0 0.0 0.0</DefaultTextColor>
+    </UISettings>
+    <PrintSettings PaperSize="612.0,792.0" LeftMargin="72.0" RightMargin="72.0" TopMargin="90.0" BottomMargin="90.0" PaperType="na-letter" Orientation="Portrait" HorizontalPagination="Clip" VerticalPagination="Auto" ScaleFactor="1.0" HorizontallyCentered="Yes" VerticallyCentered="Yes" Collates="Yes" PagesAcross="1" PagesDown="1"></PrintSettings>
+</ScappleDocument>
