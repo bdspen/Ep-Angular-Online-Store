@@ -4,15 +4,16 @@ onlineStore.controller('StoreCtrl', function StoreCtrl($scope){
     $scope.itemsInCart= [];
 
     $scope.items = [
-                    {name: "item1 name", price: 10},
-                    {name: "item2 name", price: 12},
-                    {name: "item4 name", price: 15},
-                    {name: "item5 name", price: 20}
+                    {name: "item1", price: 10},
+                    {name: "item2", price: 12},
+                    {name: "item4", price: 15},
+                    {name: "item5", price: 20}
                     ];
     $scope.addItemToStore = function(){
 
-        $scope.items.push({name: $scope.itemName });
+        $scope.items.push({name: $scope.itemName, price: $scope.itemPrice });
         $scope.itemName = null;
+        $scope.itemPrice = null;
     };
     $scope.deleteItem = function(item) {
 
@@ -39,8 +40,8 @@ onlineStore.controller('StoreCtrl', function StoreCtrl($scope){
     }
 
     $scope.deleteFromCart = function(item){
-        var index = $scope.items.indexOf(item);
-        $scope.itemsInCart.splice(index, 1);
 
+        var index = $scope.items.indexOf(item);
+        $scope.itemsInCart.splice(index, 1);s
     }
 });

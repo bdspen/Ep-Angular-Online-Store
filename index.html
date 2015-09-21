@@ -10,25 +10,25 @@
 </head>
 <body>
 <!-- search form container for items for sale  ##############################################-->
-    <div class"container" ng-controller="StoreCtrl">
+    <div class="container" ng-controller="StoreCtrl">
 <!-- CARTs elements #############################-->
-        <div class="col-md-4">
-            <h2>Cart</h2>
 
-                <h2 ng-show="itemsInCart.length">Items for Sale</h2>
-                <h2 ng-show="itemsInCart.length">No items found...</h2>
-                <ul>
-                    <li ng-repeat="item in itemsInCart">
-                        <span ng-click="editing = true" ng-hide="editing">
-                            {{item.name}} <a class = "btn-xs btn-danger" ng-click="deleteFromCart(item)">Delete from Cart</a>
-                        </span>
-                    </li>
-                </ul>
+        <div class="row" ng-show="items.length">
+            <div class="col-md-4">
+                <h2>Cart</h2>
 
-        </div>
+                    <h2 ng-show="itemsInCart.length">Items for Sale</h2>
+                    <h4 ng-show="!itemsInCart.length">No items found...</h4>
+                    <ul>
+                        <li ng-repeat="item in itemsInCart track by $index">
+                            <span ng-click="editing = true" ng-hide="editing">
+                                {{item.name}} <a class = "btn-xs btn-danger" ng-click="deleteFromCart(item)">Delete from Cart</a>
+                            </span>
+                        </li>
+                    </ul>
 
-        <div class"row" ng-show="items.length">
-            <div "class col-md-4">
+            </div>
+            <div class="col-md-4">
                 <h4>Search Items for sale</h4>
                     <form class="form-inline" role="form">
                         <div class="form-group">
@@ -43,10 +43,10 @@
 
                 <h2 ng-show="items.length && filtered.length">Items for Sale</h2>
                 <h2 ng-show="items.length && !filtered.length">No items found...</h2>
-                <ul>
+                <ul class="list-unstyled">
                     <li ng-repeat="item in filtered = (items | filter:query)">
                         <span ng-click="editing = true" ng-hide="editing">
-                            {{item.name}} <a class = "btn-xs btn-danger" ng-click="deleteItem(item)">Delete from store</a>
+                                <h4>{{item.name}} ${{item.price}}</h4><a class = "btn-xs btn-danger" ng-click="deleteItem(item)">Delete from store</a>
                         </span>
                             <a class = "btn-xs btn-success" ng-click="addToCart(item)">Add to Cart</a>
                         <span class="form-group" ng-show="editing" ng-submit="editing = false">
@@ -60,14 +60,16 @@
                 </ul>
             </div>
         </div>
-        <div class"row">
+        <div class="row">
         <div class="col-md-4">
             <h2>New Item For Sale</h2>
             <form ng-submit="addItemToStore()"class= "inline-form" role="form">
-                <div class = "form-group">
+                <div class = "form-inline">
                     <input type="text" ng-model="itemName" class="form-control" placeholder="Enter the name of the Item">
-                </div>
+                    <input type="text" ng-model="itemPrice" class="form-control" placeholder="$$$ Enter the price of the Item">
+
                     <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
                 </form>
         </div>
     </div>
